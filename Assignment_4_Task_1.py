@@ -1,9 +1,12 @@
-file1=open('sample.txt','r')
-reading_file=file1.read()
-print(reading_file)
-file1.close()
+n = input('Enter the file name')
 
-file1=open('sample1.txt','r')
-reading_file=file1.read()
-print(reading_file)
-file1.close()
+try:
+
+    file1=open(n,'r')
+    reading_file=file1.read()
+    print(reading_file)
+    file1.close()
+except:
+    print("File ", n, "not found. Please check the file name.")
+    
+    
